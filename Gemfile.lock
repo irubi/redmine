@@ -126,7 +126,6 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-jdbc-adapter (= 1.2.5)
-  activerecord-jdbcmysql-adapter
   builder (= 3.0.0)
   capybara (~> 2.1.0)
   coderay (~> 1.0.9)
@@ -134,7 +133,7 @@ DEPENDENCIES
   i18n (~> 0.6.0)
   jquery-rails (~> 2.0.2)
   mocha (>= 0.14)
-  mysql2 (~> 0.3.11)
+  mysql2
   net-ldap (~> 0.3.1)
   rack-openid
   rails (= 3.2.13)

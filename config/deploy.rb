@@ -1,15 +1,15 @@
 
 
-set :default_environment, {
-  'PATH' => "/usr/local/rvm/gems/ruby-2.0.0-p195/bin:/usr/local/rvm/bin:/usr/local/rvm/gems/ruby-2.0.0-p195/bin:$PATH",
-  'RUBY_VERSION' => 'ruby 2.0.0',
-  'GEM_HOME'     => '/usr/local/rvm/gems/ruby-2.0.0-p195',
-  'GEM_PATH'     => '/usr/local/rvm/gems/ruby-2.0.0-p195',
-  'BUNDLE_PATH'  => '/usr/local/rvm/gems/ruby-2.0.0-p195'  # If you are using bundler.
-}
-set :rvm_type, :system
-require "rvm/capistrano"
-require 'bundler/capistrano'
+# set :default_environment, {
+#   'PATH' => "/usr/local/rvm/gems/ruby-2.0.0-p195/bin:/usr/local/rvm/bin:/usr/local/rvm/gems/ruby-2.0.0-p195/bin:$PATH",
+#   'RUBY_VERSION' => 'ruby 2.0.0',
+#   'GEM_HOME'     => '/usr/local/rvm/gems/ruby-2.0.0-p195',
+#   'GEM_PATH'     => '/usr/local/rvm/gems/ruby-2.0.0-p195',
+#   'BUNDLE_PATH'  => '/usr/local/rvm/gems/ruby-2.0.0-p195'  # If you are using bundler.
+# }
+# set :rvm_type, :system
+# require "rvm/capistrano"
+# require 'bundler/capistrano'
 
 default_run_options[:pty] = true  # Must be set for the password prompt from git to work
 set :application, "sns"
